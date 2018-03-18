@@ -1,0 +1,129 @@
+	<style>
+		#svgholder{
+			background: #f7f7f7;
+    		padding: 20px;
+		}
+		.g-button {
+			background: rgba(255,102,0,1.00);
+			border-color: rgba(255,63,0,1.00);
+			border-top-color: #bbb;
+			/* box-shadow: inset 0 1px 2px rgba(0,0,0,.1); */
+			color: #fff;
+			font-weight: 600;
+			outline: none;
+			cursor: pointer;
+			font: inherit;
+			font-size: 12px;
+			line-height: 18px;
+			margin: 0 -1px 0 0;
+			padding: 8px 12px;
+			white-space: nowrap;
+/*			width: 13em;*/
+			border: solid 1px rgba(255,63,0,1.00);
+		}
+		@media only screen and (max-width: 500px) {
+			.g-button {
+/*				width: 20%;*/
+				padding:5px 7px;
+				margin: 0;
+			}
+		}
+		.g-button:hover{
+			
+			transition: .5s all ;
+		}
+		.g-button.active, .g-button:hover{
+			background: #fff;
+			color: rgba(255,102,0,1.00);
+		}
+		.g-button.active:hover{
+			color: #fff;
+			background: rgba(255,102,0,1.00);
+		}
+		.pre-2001 {
+			fill:red;
+		}
+		div.tooltip {	
+			position: absolute;			
+			text-align: center;			
+			max-width: 200px;					
+			height: auto;					
+			padding: 15px 0;				
+			font: 12px sans-serif;		
+			background: rgba(0,0,0,0.7);		
+			pointer-events: none;	
+		}
+
+		.tooltip h3{
+			background: #ff9900;
+			color: #fff;
+			font-size: 16px;
+			padding: 10px;
+			margin-bottom: 15px;
+		}
+		.tooltip p {
+			    border-top: dotted 0px rgba(255,255,255,0.2);
+   				 padding-bottom: 5px;
+				color:#fff;
+			text-align: left;
+			margin-left: 15px;
+			margin-bottom: 0px;
+		}
+		circle {
+			position: relative;
+			cursor: pointer;
+			z-index: 1000;
+		}
+		line{
+			stroke-dasharray: 1px 2px;
+			stroke-width:0.1px;
+			stroke-color:#ccc;
+		}
+		text{
+			z-index: 10;
+		}
+		.notes{
+			font-size: 12px;
+			line-height: 0px;
+			color: #333;
+			word-break: keep-all;
+			display: inline;
+		}
+		.kolkata { fill:rgba(232, 70, 77,0.7) ; stroke:#E8464D ;}
+		.warangal { fill:rgba( 237, 111, 116,0.7); stroke:#ED6F74;}
+		.mumbai { fill:rgba(250, 187, 19,0.7) ; stroke: #FABB13;}
+		.hyderabad  { fill:rgba(91, 35, 51,0.7) ; stroke:#5B2333;}
+		.bengaluru{ fill:rgba(167, 165, 198,0.7 ); stroke:#A7A5C6;}
+		.new_delhi { fill:rgba(25, 128, 188,0.7 ); stroke:#1980BC;}
+		.kharagpur { fill:rgba(173, 21, 41,0.7 ); stroke:#AD1529;}
+		.palo_alto{ fill:rgba( 109, 89, 89,0.7 ); stroke:#6D5959;}
+		.chennai { fill:rgba(242, 67, 51,0.7 ); stroke:#F24333;}
+		.patna { fill:rgba(205, 154, 16,0.7 ); stroke:#CD9A10;}
+		.kanpur { fill:rgba(242, 211, 152,0.7 ); stroke:#F2D398;}
+		.dhanbad { fill:rgba( 237, 111, 116,0.7); stroke:#ED6F74;} /*done*/
+		.patiala { fill:rgba(138, 201, 38,0.7 ); stroke:#8AC926;}
+		.chandigarh { fill:rgba( 106, 76, 147,0.7 ); stroke:#6A4C93;}
+		.pune { fill:rgba(222, 26, 26,0.7 ); stroke:#DE1A1A;}
+		.tiruppur { fill:rgba(1, 167, 194,0.7 ); stroke:#01A7C2;}
+		.gurugram { fill:rgba(0, 105, 137,0.7 ); stroke:#006989;}
+		.raigad { fill:rgba(91, 68, 7,0.7 ); stroke:#5B4407;}
+		.ranchi { fill:rgba(255, 202, 58,0.7 ); stroke:#FFCA3A;}
+		.nitte { fill:rgba(25, 130, 196,0.7 ); stroke:#1982C4;}
+		.karnal { fill:rgba(186,225,255,0.7 ); stroke:#bae1ff;}
+		.jaipur { fill:rgba(186,225,255,0.7 ); stroke:#bae1ff;}
+		.guwahati { fill:rgba(186,225,255,0.7 ); stroke:#bae1ff;}
+		.faridabad { fill:rgba(186,225,255,0.7 ); stroke:#bae1ff;}
+		.bhubhaneshwar { fill:rgba(186,225,255,0.7 ); stroke:#bae1ff;}
+		.thiruvananthapuram { fill:rgba(186,225,255,0.7 ); stroke:#bae1ff;}
+		.noida { fill:rgba(186,225,255,0.7 ); stroke:#bae1ff;}
+		.hooghly{ fill:rgba(186,225,255,0.7 ); stroke:#bae1ff;}
+	</style>
+	<button id="combine" class="g-button active "> Master Cluster view</button>
+	<button id="bycitation" class="g-button "> By Citations</button>
+	<button id="byhindex" class="g-button " style="display: none"> By H Index</button>
+	<button id="bycity" class="g-button "> By City</button>
+
+
+	<div id="svgholder"></div>
+<!--<script src="jscode.js"></script>-->
+

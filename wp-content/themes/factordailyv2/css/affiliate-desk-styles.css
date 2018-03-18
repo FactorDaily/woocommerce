@@ -1,0 +1,66 @@
+#affiliate-desk .drop-area {
+	width:48%;
+}
+#affiliate-desk .users-list {
+	width:48%;
+	float:left;
+}
+#affiliate-desk .af_user {
+	width:100px; 
+	height:100px;
+	border-radius:50px;
+	box-shadow:2px 1px 5px #ccc;
+	float:left;
+	margin:0 10px 10px 0;
+}
+#affiliate-desk .show_posts{
+    margin-bottom: 0px;
+    display: block;
+    height: auto;
+	border:1px solid #ffeacb ;
+	padding:3px;
+}
+
+#affiliate-desk  .p_title{
+	background:#fff;
+	color:#777;
+	font-size:12px;
+	position:relative;
+	padding:10px;
+	text-align:right;
+	cursor:move;
+}
+#affiliate-desk a {	
+	text-decoration:none;
+}
+li.selected_post  {
+	border:1px solid #ff9900!important;
+}
+.u_details {
+
+	}
+.u_details li {
+	width:20px;
+	height:20px;
+	padding:3px;
+	float:left;
+	margin-right:8px;
+	border-radius:2px;
+	border:1px solid #ccc;
+	position:relative;
+	z-index:2;
+}
+.u_details li .u_remove {
+    position: absolute;
+    top: 6px;
+    right: -7px;
+    color: #fff;
+    font-weight: 100;
+    cursor: pointer;
+    padding: 0 3px 4px;
+    z-index: 3;
+    border: 1px solid #f00;
+    border-radius: 2px;
+    background: #f00;
+    line-height: 7px;
+}

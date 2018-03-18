@@ -1,0 +1,62 @@
+﻿cx	cy	capitalization	earnings	employees	x	y	sector	name	alias	symbol	vintage	description	rating	location
+10	20	59	0	59	10	20	Speech/Language Technologies	Ubona	http://www.ubona.com/	Other	2007	Provides AI solutions in the areas of speech and image recognition, content discovery, music recognition, and more.	4.5	Bengaluru
+75	20	23	0	23	75	20	Robotics	Robosoft Systems	http://www.robosoftsystems.co.in	Other	2008	Makes an air duct inspection and aerial crop inspection robot.	No reviews yet	Mumbai
+85	-28.8	126	8.8	126	85	-28.8	Speech/Language Technologies	Uniphore	http://www.uniphore.com	Series B	2008	Provides speech analytics, virtual assistant, and voice biometrics services.	2.2	 Chennai, Singapore
+154	-14	76	4	76	154	-14	Speech/Language Technologies	Reverie Language Technologies	http://www.reverieinc.com	Series A	2009	Provides a Language-as-a-Service platform, and a multilingual keypad with support for 16 Indian languages.	3.3	Bengaluru
+231	20	12	0	12	231	20	Robotics	Omnipresent Robot Tech	http://www.omnipresenttech.com	Other	2010	Builds drones built for industrial inspections, emergency response and defence, river cleaning robots, and robots for logistics.	No reviews yet	New Delhi
+308	-50	398	30	398	308	-50	Robotics	Grey Orange	http://greyorange.com	Other	2011	Advanced robotics systems for automation at distribution and fulfillment centers.	3.7	Gurgaon
+380	19.9	20	0	20	380	19.9	Computer Vision	AIIndra	http://www.aindra.in	Other	2012	Provides handheld devices the ability to detect and identify people.	No reviews yet	Bengaluru
+350	-24	52	4	52	350	-24	EdTech	Embibe	https://www.embibe.com	Other	2012	Uses personalised analytics in test preparation.	3.7	Mumbai
+400	19.987	28	0	28	400	19.987	Marketing Tech	MintM	http://www.mintm.com	Seed	2012	Offerings include AI-powered digital signage and interactive robotic kiosks, in store analytics, and person identification.	5	 Palo Alto, Bengaluru, Stuttgart
+390	20.9	19	0	19	390	20.9	Robotics	Sastra Robotics	http://www.sastrarobotics.com	Other	2012	Working on robotic manipulators, tele-presence robots, robot interfacing and simulation software, prosthetic robotic arm, and more.	No reviews yet	Cochin
+400	20.1	30	0	30	400	20.1	Chatbots	Senseforth.ai	http://www.senseforth.ai	NA	2012	Provides a conversation platform powered by AI that mimics human cognitive abilities.	No reviews yet	Bengaluru
+375	28.9	63	0.3	63	375	28.9	EdTech	SP Robotic Works	https://sproboticworks.com/	Angel	2012	Provides robotics kits for students.	3.7	Chennai
+462	-19.25	18	0.75	18	462	-19.25	Development	Arya.ai	http://arya.ai	Seed	2013	Provides a platform to simplify and manage deployment of deep learning based applications.	No reviews yet	Mumbai
+510	20	15	0	15	510	20	Robotics	Bharati Robotics	http://www.brsindia.com	Other	2013	Developing robotic solutions for service, defense, industrial, and agricultural sectors.	No reviews yet	Pune
+420	-7.8	241	12.2	241	420	-7.8	Chatbots	Haptik	https://www.haptik.ai/	Series B	2013	Personal-assistant app powered by an AI based chatbot platform.	3.7	Mumbai
+460	-18.5	45	1.5	45	460	-18.5	E-Commerce / Retail	Mad Street Den	https://www.madstreetden.com/	Series A	2013	Provides AI solutions for the retail and e-commerce sector, with a focus on fashion.	4	 Fremont, California & Chennai
+542	-5	129	15	129	542	-5	HR Tech	Belong.co	http://belong.co	Other	2014	Provides a predictive outbound hiring solution.	4	Bengaluru
+540	19.98	11	0	11	540	19.98	LegalTech	CruxIQ	http://www.cruxiq.com/	NA	2014	AI-driven doc review start-up	No reviews yet	Chennai
+529	20.12	27	0	27	529	20.12	Robotics	Emotix	https://www.emotix.in/	Other	2014	Makers of Miko, Indiaâ€™s first companion robot.	No reviews yet	Mumbai
+538	-19.56	21	0.44	21	538	-19.56	Analytics	Frrole.ai	https://frrole.ai/	Other	2014	Analyzes social data in real-time to provide contextual, topical, and people insights to brands, media and technology companies.	No reviews yet	Palo Alto, Bengaluru
+543	19.256	5	0	5	543	19.256	Robotics	Green Robot Machinery	http://www.grobomac.com	Seed	2014	Maker of a robot platform for harvesting crops, currently focused on a cotton-picking robot.	No reviews yet	Bengaluru
+530	-19	13	1	13	530	-19	Computer Vision	HyperVerge	http://www.hyperverge.co	Seed	2014	Has developed a patent-pending technology for analysis of images and videos.	No reviews yet	Chennai
+541	19.78	17	0	17	541	19.78	Analytics	Newee Analytics	http://www.neewee.in/	NA	2014	A Platform as a Service (PaaS) provider across domains with specialization in predictive maintenance/condition based monitoring solutions for Internet of Things (IoT).	No reviews yet	Bengaluru
+520	-18.6	27	1.4	27	520	-18.6	Analytics	ParallelDots	https://www.paralleldots.com	Other	2014	Provides text analysis APIs for content curation, social listening, contextual analysis, and customer support automation.	No reviews yet	Gurgaon
+580	-17.9	1	2.1	1	580	-17.9	HealthTech	Tricog Health	https://www.tricog.com	Series A	2014	Offers cloud-connected ECG devices to detect heart complications.	3	Bengaluru
+500	20.154	6	0	6	500	20.154	Robotics	Vanora Robots	http://www.vanorarobots.com	Other	2014	Combines architecture with robotics, with bespoke products for living spaces.	No reviews yet	Mangalore
+532	20	32	0	32	532	20	Energy	Zenatix	http://www.zenatix.com	Other	2014	Uses advanced machine learning to deliver 10-30% higher energy efficiency to large commercial consumers of electricity.	No reviews yet	Gurgaon
+616	-19.71	10	0.29	10	616	-19.71	Marketing Tech	Artifacia	http://artifacia.com/	Angel	2015	Helps online brands turn their Instagram content into engaging shoppable galleries.	No reviews yet	Bengaluru
+650	20.123	19	0	19	650	20.123	Analytics	Cuddle.ai	http://www.cuddle.ai	NA	2015	Offers a personal analyst that delivers relevant business insights in the form of byte-sized cards on your smartphone.	No reviews yet	Jersey City, NJ, Mumbai
+600	20	10	0	10	600	20	E-Commerce / Retail	Huew	https://huew.co/	NA	2015	Deconstructs celebrity looks using computer vision, provides e-commerce links to shop the look.		Bengaluru
+630	19.6	20	0	20	630	19.6	Speech/Language Technologies	Indiantts	http://indiantts.com	NA	2015	Provides text to speech engine solutions for Indian languages.	No reviews yet	Ahmedabad
+585	-13.9	19	6.1	19	585	-13.9	Development	Julia Computing	http://www.juliacomputing.com/	Seed	2015	The programming language thatâ€™s used in self-driving cars, precision medicine, medical diagnosis and more.	No reviews yet	 Boston, NY, Bengaluru
+619	-19.96	4	0.04	4	619	-19.96	Transport	LightMetrics	http://www.lightmetrics.co	Seed	2015	Uses computer vision and machine learning for driver monitoring	No ratings yet	Bengaluru
+596	19.98	13	0	13	596	19.98	Speech/Language Technologies	Liv.ai	https://liv.ai	NA	2015	Provides speech API to convert speech-to-text in nine major Indian languages.	5	Bengaluru
+605	-17.25	44	2.75	44	605	-17.25	Transport	Locus.sh	https://locus.sh	Series A	2015	Logistics automation platform with in-built route planning, vehicle allocation and 3D packing technology solutions.	No Ratings Yet	Bengaluru
+686	-4	47	16	47	686	-4	Transport	Netradyne	https://www.netradyne.com	Series A	2015	Provides a deep learning-based computer vision solution to improve automotive safety	5	 Bengaluru, San Diego, US
+561	-17.6	47	2.4	47	561	-17.6	Chatbots	Niki.ai	http://niki.ai	Series A	2015	A chatbot that lets users search, discover, choose, make payments.	3.5	Bengaluru
+671	19.235	2	0	2	671	19.235	Energy	Quenext	http://www.quenext.com/	Other	2015	An AI lab with a focus on energy, agriculture & water management.	No reviews yet	Mumbai
+648	-14.2	30	5.8	30	648	-14.2	HealthTech	Sigtuple	http://www.sigtuple.com	Series A	2015	Healthcare diagnostics using machine learning.	5	Bengaluru
+562	19.25	20	0	20	562	19.25	E-Commerce / Retail	Staqu	http://www.staqu.com/	Seed	2015	Provides automation technologies such as visual search and recommendation, meta-tags generation, for e-commerce companies.	5	Gurgaon
+571	19.1	4	0	4	571	19.1	Computer Vision	Stomatobot	https://stomatobot.com	Other	2015	Uses computer vision and ML to enhance video surveillance	No reviews yet	Pune
+670	20.42	3	0	3	670	20.42	Chatbots	Tars	https://hellotars.com/	Other	2015	Provides conversational bots that can be used on Facebook and on business website, doesn't need any coding.		Bengaluru
+559	20.3	4	0	4	559	20.3	Analytics	Turing Analytics	https://www.turingiq.com/	NA	2015	Provides customer review analytics and visual search products.	No reviews yet	Bengaluru
+693	-16.5	34	3.5	34	693	-16.5	Chatbots	Active.ai	http://www.active.ai	Other	2016	Uses artificial intelligence (AI) to deliver conversational banking services.	5	Singapore, Bengaluru
+688	-19.775	5	0.225	5	688	-19.775	E-Commerce / Retail	Corseco Technologies	http://corseco.in/	Seed	2016	Uses AI for visual search, video analytics for retail and web.		New Delhi
+693	20	5	0	5	693	20	Computer Vision	Corseco.in	http://corseco.in	Seed	2016	Provides visual search, video analytics for retail and web sector.	No reviews yet	New Delhi
+674	-19.8	10	1	10	674	-19.8	Computer Vision	Cureskin	http://cureskin.com	Other	2016	An AI dermatologist on your smartphone.	No reviews yet	Bengaluru
+687	-19.962	3	0.038	3	687	-19.962	HealthTech	Elth.ai	http://elth.ai/	Seed	2016	Made by (HCFAB Health Technologies Pvt Ltd), this chat-based personal assistant answers medical/health-related queries.	No reviews yet	Bengaluru
+683	19.6	4	0	4	683	19.6	HR Tech	Glider.ai	https://glider.ai/	NA	2016	Uses AI for personalised candidate outreach and ranking top talent.	No reviews yet	Fremont, California, Bengaluru
+688	20.12	12	0	12	688	20.12	HealthTech	iNICU	http://inicucloud.com/	NA	2016	Uses IoT, artificial intelligence and predictive analytics in neonatal care.	No reviews yet	New Delhi
+670	20.136	1	0	1	670	20.136	LegalTech	Lawbot.ai	http://www.lawbot.ai	NA	2016	Uses natural language processing to take the drudgery out of poring through legal contracts.	No reviews yet	Chennai
+676	-19.85	7	0.15	7	676	-19.85	Marketing Tech	Marax	https://marax.ai/	Seed	2016	Uses proprietary deep learning to solve churn its customers. 		 Palo Alto, Bengaluru
+688	-13.3	21	6.7	21	688	-13.3	Speech/Language Technologies	Mihup	http://www.mihup.com	Other	2016	Delivers human-like understanding of naturally spoken queries for large, complex content domains.	5	Bengaluru
+681	-19.9	6	0.1	6	681	-19.9	Chatbots	Morph.ai	https://morph.ai/	NA	2016	Helps enterprises automate customer support, sell products, and generate leads over chat.	No reviews yet	Gurgaon
+691	19.99	10	0	10	691	19.99	HealthTech	Predible Health	http://www.prediblehealth.com	NA	2016	Building AI-powered products for cancer radiologists.	No ratings yet	Bengaluru
+688	19.256	14	0	14	688	19.256	HealthTech	Qure.ai	http://www.qure.ai	NA	2016	Aims to use deep learning to diagnose disease from radiology and pathology imaging, and create personalised cancer treatment plans.	No reviews yet	Mumbai
+670	19.995	6	0	6	670	19.995	HR Tech	Skillate	http://skillate.com	NA	2016	Uses NLP and deep learning algorithms to parse and rank resumes based on relevance.	4	Bengaluru
+692	20.145	10	0	10	692	20.145	E-Commerce / Retail	Thirdwatch	https://www.thirdwatch.ai/	NA	2016	Uses big data and AI for fraud prevention in e-commerce transactions.	No reviews yet	Gurgaon
+693	-19	12	1	12	693	-19	EdTech	VideoKen		Seed	2016	A video-based social learning platform that uses big data analytics, machine learning and AI.	No ratings yet	Bengaluru
+760	19.278	5	0	5	760	19.278	Analytics	Cyber Boxer	http://www.cyberboxer.com	Other	2017	Provides  cyber risk analytics solutions for insurers and reinsurers	No reviews yet	New Delhi
+770	19.847	3	0	3	770	19.847	Speech/Language Technologies	Spext.co	http://spext.co	Other	2017	Provides a SaaS product that automatically transcribes video and audio content.	No reviews yet	 Bengaluru, San Francisco

@@ -1,0 +1,57 @@
+﻿cx	cy	capitalization	earnings	employees	x	y	sector	name	alias	symbol	vintage	description
+10	10	19	0	19	10	10	Analytics	Cuddle.ai		NA	2015	Offers a personal analyst that delivers relevant business insights in the form of byte-sized cards on your smartphone.
+320	29.2	21	0.44	21	487.1	0	Analytics	Frrole.ai		Other	2014	Analyzes social data in real-time to provide contextual, topical, and people insights to brands, media and technology companies.
+320	-48.7	17	0	17	159.1	-10.9	Analytics	Newee Analytics		NA	2014	A Platform as a Service (PaaS) provider across domains with specialization in predictive maintenance/condition based monitoring solutions for Internet of Things (IoT).
+320	16.3	27	1.4	27	310.6	7	Analytics	ParallelDots		Other	2014	Provides text analysis APIs for content curation, social listening, contextual analysis, and customer support automation.
+320	8	4	0	4	512.2	3.3	Analytics	Turing Analytics		NA	2015	Provides customer review analytics and visual search products.
+406.4	14.3	34	3.5	34	407.9	-13.6	Chatbots	Active.ai		Other	2016	Uses artificial intelligence (AI) to deliver conversational banking services.
+750.2	17.9	241	12.2	241	750.3	22.5	Chatbots	Haptik		Series B	2013	Personal-assistant app powered by an AI based chatbot platform.
+224.8	-72.6	6	0	6	234.4	-21.4	Chatbots	Morph.ai		NA	2016	Helps enterprises automate customer support, sell products, and generate leads over chat.
+318.1	78.1	47	2.4	47	323.1	-5.7	Chatbots	Niki.ai		Series A	2015	A chatbot that lets users search, discover, choose, make payments.
+268.8	82.7	30	0	30	272.4	0	Chatbots	Senseforth.ai		NA	2012	Provides a conversation platform powered by AI that mimics human cognitive abilities.
+437.5	-43.9	20	0	20	427	-2.8	Computer Vision	AIIndra		Other	2012	Provides handheld devices the ability to detect and identify people.
+147.7	-24.9	5	0	5	157.9	13.4	Computer Vision	Corseco.in		Seed	2016	Provides visual search, video analytics for retail and web sector.
+704.6	3.9	10	0	10	689.7	6.1	Computer Vision	Cureskin		Other	2016	An AI dermatologist on your smartphone.
+302.6	-37.4	13	1	13	302.5	0	Computer Vision	HyperVerge		Seed	2014	Has developed a patent-pending technology for analysis of images and videos.
+384.6	56.6	4	0	4	368.5	12.9	Computer Vision	Stomatobot		Other	2015	Uses computer vision and ML to enhance video surveillance
+176.3	50.9	18	0.75	18	180	0	Development	Arya.ai		Seed	2013	Provides a platform to simplify and manage deployment of deep learning based applications.
+184.2	52.8	19	6.1	19	188.9	-1.4	Development	Julia Computing		Seed	2015	The programming language that’s used in self-driving cars, precision medicine, medical diagnosis and more.
+201.5	30.2	5	0.225	5	201.4	0	E-Commerce / Retail	Corseco Technologies		Seed	2016	Uses AI for visual search, video analytics for retail and web.
+535.5	7.4	45	1.5	45	536.3	0	E-Commerce / Retail	Mad Street Den		Series A	2013	Provides AI solutions for the retail and e-commerce sector, with a focus on fashion.
+55.5	-4.4	20	0	20	61.2	0	E-Commerce / Retail	Staqu		Seed	2015	Provides automation technologies such as visual search and recommendation, meta-tags generation, for e-commerce companies.
+448.5	-37.1	10	0	10	446.4	0	E-Commerce / Retail	Thirdwatch		NA	2016	Uses big data and AI for fraud prevention in e-commerce transactions.
+189.9	66.7	52	4	52	197.7	-1.4	EdTech	Embibe		Other	2012	Uses personalised analytics in test preparation.
+692.1	-14.2	63	0.3	63	690	-3.9	EdTech	SP Robotic Works		Angel	2012	Provides robotics kits for students.
+301.3	-70.9	12	1	12	305.5	8.1	EdTech	VideoKen		Seed	2016	A video-based social learning platform that uses big data analytics, machine learning and AI.
+679	-17.4	2	0	2	690.3	6	Energy	Quenext		Other	2015	An AI lab with a focus on energy, agriculture & water management.
+546.2	2.8	32	0	32	547.6	0	Energy	Zenatix		Other	2014	Uses advanced machine learning to deliver 10-30% higher energy efficiency to large commercial consumers of electricity.
+302.8	69	3	0.038	3	292.7	-5.4	HealthTech	Elth.ai		Seed	2016	Made by (HCFAB Health Technologies Pvt Ltd), this chat-based personal assistant answers medical/health-related queries.
+142.9	11.4	12	0	12	153.5	-6.6	HealthTech	iNICU		NA	2016	Uses IoT, artificial intelligence and predictive analytics in neonatal care.
+351.9	-28.9	10	0	10	351.8	0.3	HealthTech	Predible Health		NA	2016	Building AI-powered products for cancer radiologists.
+118.5	-22.5	14	0	14	116.1	0	HealthTech	Qure.ai		NA	2016	Aims to use deep learning to diagnose disease from radiology and pathology imaging, and create personalised cancer treatment plans.
+740.3	-32	30	5.8	30	745.5	-0.4	HealthTech	Sigtuple		Series A	2015	Healthcare diagnostics using machine learning.
+197.1	-57.9	1	2.1	1	210.1	-20.5	HealthTech	Tricog Health		Series A	2014	Offers cloud-connected ECG devices to detect heart complications.
+502.4	10.9	129	15	129	492.2	0.3	HR Tech	Belong.co		Other	2014	Provides a predictive outbound hiring solution.
+41.3	2.6	4	o	4	44.4	0	HR Tech	Glider.ai		Na	2016	Uses AI for personalised candidate outreach and ranking top talent.
+69.8	12.2	6	0	6	72	0	HR Tech	Skillate		NA	2016	Uses NLP and deep learning algorithms to parse and rank resumes based on relevance.
+146.3	-7.7	1	0	1	147.2	11.4	LegalTech	Lawbot.ai		NA	2016	Uses natural language processing to take the drudgery out of poring through legal contracts.
+107.7	-22.1	10	0	10	109.4	0	Marketing Tech	Artifacia		Angel	2015	Helps online brands turn their Instagram content into engaging shoppable galleries.
+23.8	-10.8	28	0	28	24.2	0.7	Marketing Tech	MintM		Seed	2012	Offerings include AI-powered digital signage and interactive robotic kiosks, in store analytics, and person identification.
+407.8	-17.1	15	0	15	401.4	4.7	Robotics	Bharati Robotics		Other	2013	Developing robotic solutions for service, defense, industrial, and agricultural sectors.
+285	29.2	27	0	27	280	-9.7	Robotics	Emotix		Other	2014	Makers of Miko, India’s first companion robot.
+276.2	-6.4	5	0	5	279.1	0.6	Robotics	Green Robot Machinery		Seed	2014	Maker of a robot platform for harvesting crops, currently focused on a cotton-picking robot.
+507	28.9	398	30	398	502.2	0	Robotics	Grey Orange		Other	2011	Advanced robotics systems for automation at distribution and fulfillment centers.
+490	3.7	12	0	12	482.8	1.9	Robotics	Omnipresent Robot Tech		Other	2010	Builds drones built for industrial inspections, emergency response and defence, river cleaning robots, and robots for logistics.
+444	-9.4	23	0	23	433.8	-17.1	Robotics	Robosoft Systems		Other	2008	Makes an air duct inspection and aerial crop inspection robot.
+460.1	-4.1	19	0	19	455.8	-2.7	Robotics	Sastra Robotics		Other	2012	Working on robotic manipulators, tele-presence robots, robot interfacing and simulation software, prosthetic robotic arm, and more.
+134.7	20.8	6	0	6	148.6	3.8	Robotics	Vanora Robots		Other	2014	Combines architecture with robotics, with bespoke products for living spaces.
+87.3	16.1	20	0	20	86.8	2.9	Speech/Language Tech	Indiantts		NA	2015	Provides text to speech engine solutions for Indian languages.
+199.1	35.6	13	0	13	200.3	0	Speech/Language Tech	Liv.ai		NA	2015	Provides speech API to convert speech-to-text in nine major Indian languages.
+280.9	75.1	21	6.7	21	279.2	11.8	Speech/Language Tech	Mihup		Other	2016	Delivers human-like understanding of naturally spoken queries for large, complex content domains.
+747.2	28.8	76	4	76	749.7	0.4	Speech/Language Tech	Reverie Language Technologies	A.I.G.	Series A	2009	Provides a Language-as-a-Service platform, and a multilingual keypad with support for 16 Indian languages.
+185.6	39.8	3	0	3	182.2	8.5	Speech/Language Tech	Spext.co		Other	2017	Provides a SaaS product that automatically transcribes video and audio content.
+247.2	-53.6	59	0	59	258	10	Speech/Language Tech	Ubona		Other	2007	Provides AI solutions in the areas of speech and image recognition, content discovery, music recognition, and more.
+289.8	-23.5	126	8.8	126	301	4.5	Speech/Language Tech	Uniphore		Series B	2008	Provides speech analytics, virtual assistant, and voice biometrics services.
+431.4	-14.3	4	0.04	4	430	-10.8	Transport	LightMetrics		Seed	2015	Uses computer vision and machine learning for driver monitoring
+201.4	13.6	44	2.75	44	209.4	0	Transport	Locus.sh		Series A	2015	Logistics automation platform with in-built route planning, vehicle allocation and 3D packing technology solutions.
+321	-54.1	47	16	47	315	-0.7	Transport	Netradyne		Series A	2015	Provides a deep learning-based computer vision solution to improve automotive safety

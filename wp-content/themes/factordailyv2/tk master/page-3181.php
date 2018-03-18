@@ -1,0 +1,1 @@
+<?php wp_get_archives('type=alpha'); ?>

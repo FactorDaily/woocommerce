@@ -1,0 +1,1028 @@
+<style type="text/css">
+
+
+.storyHeader h1,
+.storySummary {	
+  margin: auto;
+  padding: 0;
+  position: relative;
+  width: 720px;
+}
+.storyHeader h1 {
+  font-size: 28px;
+  margin: 1em auto .3em auto;
+}
+</style>
+<!--[if lte IE 8]>
+  <img src="fallback.png" alt="chart" width="970">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<style>
+.g-content {
+  position: relative;
+  font: 11px sans-serif;
+  width: 970px;
+  margin: 0 auto;
+}
+	.g-graphic svg {
+/*		height: auto;*/
+	}
+	.g-graphic {
+		background: #f7f7f7;
+		padding: 20px;
+	}	
+	.g-graphic a {
+		display: inline-block;
+		margin: 10px;
+		text-decoration: none;
+	}
+	
+	.g-graphic a:hover {
+/*		text-decoration: underline;*/
+		color: #b3b3b3;
+	}
+	.g-graphic a i {
+		padding: 0 6px;
+		margin-right: 5px;
+		border-radius: 50px;
+	}
+	.g-graphic a:hover i{
+	background: #b3b3b3!important;
+	}
+.g-annotations {
+  font-size: 12px;
+  line-height: 1.2em;
+  position: absolute;
+  top: 350px;
+}
+.g-annotation {
+  color: #555;
+  position: absolute;
+  width: 140px;
+}
+.g-annotation .g-button {
+  background: #004276;
+  color: #fff;
+  font-weight: bold;
+  width: 140px;
+}
+.g-annotation .g-button:hover {
+  background: #064d84;
+}
+.g-annotation .g-button:active {
+  background: #002e5f;
+}
+.g-axis {
+  pointer-events: none;
+}
+.g-axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+	
+}
+
+.g-axis path {
+  display: none;
+}
+.g-y.g-axis text {
+  font: normal 12px sans-serif;
+}
+.g-y.g-axis line {
+stroke: rgba(173,190,9,0.30);
+width: 1px;
+	
+}
+.g-overall {
+  pointer-events: none;
+}
+.g-overall line {
+  stroke: #f7f90a;
+  stroke-width: 1px;
+}
+.g-overall text {
+  text-anchor: middle;
+}
+.g-sector circle {
+  fill: #fff;
+/*
+  stroke: #000;
+  stroke-width: 1px;
+*/
+	opacity: 0.8;
+}
+.g-sector circle:hover{
+	box-shadow: 10px -10px #ff9900;
+}
+.g-sector circle.g-active {
+  stroke-width: 2px;
+}
+.g-searching .g-sector .g-match {
+  stroke-width: 1px;
+}
+.g-searching .g-sector circle:not(.g-match) {
+  fill-opacity: .2;
+}
+.g-voronoi {
+  fill: none;
+  pointer-events: all;
+}
+.g-buttons {
+  margin: 40px 0 20px 125px;
+}
+.g-buttons .g-button {
+  width: 13em;
+  border: solid 1px rgba(255,63,0,1.00);
+/*  box-shadow: 0 1px 2px rgba(0,0,0,0.08);*/
+}
+.g-buttons .g-button:hover {
+  border-color: #ccc;
+  border-bottom-color: #bbb;
+  box-shadow: 0 1px 2px rgba(0,0,0,.15);
+  color: #666;
+}
+.g-button {
+  background: #fff;
+  border: none;
+/*  border-radius: 3px;*/
+  border-bottom-color: #ccc;
+  color: #888;
+  cursor: pointer;
+  font: inherit;
+  font-size: 12px;
+  line-height: 18px;
+  margin: 0 -1px 0 0;
+  padding: 8px 12px;
+  white-space: nowrap;
+}
+.g-buttons .g-button.g-active,
+.g-buttons .g-button:active {
+  background:rgba(255,102,0,1.00);
+	
+  border-color:rgba(255,63,0,1.00);
+  border-top-color: #bbb;
+/*  box-shadow: inset 0 1px 2px rgba(0,0,0,.1);*/
+  color: #fff;
+  font-weight: 600;
+	outline: none;
+}
+.g-buttons .g-button:first-child {
+/*  border-radius: 5px 0 0 5px;*/
+}
+.g-buttons .g-button:last-child {
+/*  border-radius: 0 5px 5px 0;*/
+  margin-left: -5px;
+}
+.g-buttons .g-button:focus {
+  z-index: 3;
+}
+.g-buttons .g-button.g-active {
+  z-index: 2;
+}
+.g-search {
+  float: right;
+  position: relative;
+  margin-right: 154px;
+}
+.g-search input {
+  width: 240px;
+  height: 26px;
+  font: 12px sans-serif;
+  padding: 0 8px;
+  border: solid 1px #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.08);
+}
+.g-search .g-search-clear {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background: #bbb;
+  border: none;
+  border-radius: 9px;
+  color: #fff;
+  font: 10px sans-serif;
+  padding: 0;
+  width: 18px;
+  height: 18px;
+}
+.g-search .g-search-clear:hover {
+  background: #aaa;
+}
+.g-key-color path {
+  display: none;
+}
+.g-key-color line {
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+.g-arrows {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  height: 0;
+  width: 100%;
+}
+.g-arrow {
+  position: absolute;
+  bottom: 5px;
+}
+.g-arrow-vertical {
+  width: 0;
+  border-right: solid 1px #ccc;
+}
+.g-arrow-horizontal {
+  height: 0;
+  border-top: solid 1px #ccc;
+}
+.g-tip {
+  position: absolute;
+  pointer-events: none;
+}
+.g-tip-shadow {
+  position: absolute;
+
+  width: 100%;
+  height: auto;
+	left: 60%;
+	top: 60%;
+}
+.g-tip-content {
+  position: absolute;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+
+	left:0%;
+	bottom: -150px;
+	color: #fff;
+}
+	
+	.g-tip-bg {
+			background: rgba(0,0,0,0.70);
+		padding: 15px 0;
+	}
+
+.g-tip-box {
+  position: absolute;
+  fill: #fff;
+  stroke: #000;
+  stroke-opacity: .2;
+}
+.g-tip-title,
+.g-tip-metric-value {
+/*  font-weight: bold;*/
+	
+}
+	.g-tip-metric-value.not-bold{
+		font-weight: normal;
+	}
+	.sector-h2{
+		color: #fff;
+		font-weight: normal;
+		font-size: 16px;
+		margin: 0 8px 8px;
+	}	
+.g-tip-title {
+  margin: 0px 15px 10px;
+  white-space:normal;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-weight: normal;
+	font-size: 16px;
+}
+.g-tip-metric {
+  clear: right;
+  padding: 2px 0;
+}
+
+.g-margin{
+	margin: 0px 12px 0;
+}
+	
+.g-white-bg{
+	background: #ff9900;
+	overflow: hidden;
+	text-align: left;
+	padding: 0px 6px;
+
+}
+.g-white-bg .g-tip-metric-value {
+/*		float: none!important;*/
+	}
+.g-tip-metric + .g-tip-metric {
+  border-top: dotted 0px rgba(255,255,255,0.2);
+	padding-bottom: 5px;
+}
+
+.g-tip-metric-value {
+/*  float: right;*/
+}
+.g-tip-metric-name {
+/*  color: #777;*/
+/*	font-weight: bold;*/
+	width: 80px;
+	display: inline-block;
+}
+.g-sector-notes {
+/*  color: #777;*/
+/*
+  position: absolute;
+  font-size: 11px;
+  top: 20px;
+  left: 10px;
+  margin-top: 65px;
+  width: 300px;
+*/
+}
+.g-sector-note {
+  position: absolute;
+}
+.g-annotation b,
+.g-sector-note b {
+  color: #222;
+  cursor: default;
+}
+.legendIn{
+	padding: 10px;
+	border: 1px solid #ff0099;
+	width: 10px;
+	height: 10px;
+}
+</style>
+
+<div class="g-content">
+
+<div class="g-annotations">
+
+</div>
+<div class="g-graphic">
+<div class="g-buttons">
+<button class="g-button g-active" data-view="overall">The Overall Picture</button>
+<button class="g-button" data-view="sector">View by sectors</button>
+</div>
+</div>
+<div class="g-sector-notes"></div>
+<div class="g-tip" style="width:200px; height:auto; display: none;">
+<div class="g-tip-shadow"></div>
+
+<div class="g-tip-content">
+	<div class="g-tip-bg">
+<br>
+	
+<div class="g-tip-metric g-white-bg" data-name="sector">
+<h2 class="g-tip-metric-value sector-h2"></h2>
+</div>
+	
+<div class="g-tip-metric g-margin" data-name="location">
+<br>
+<span class="g-tip-metric-name">Location:</span>
+<span class="g-tip-metric-value ">Gurgaon</span>
+</div>
+	
+<div class="g-tip-metric g-margin" data-name="rate">
+<span class="g-tip-metric-name">Founded:</span>
+<span class="g-tip-metric-value">14</span>
+</div>
+<div class="g-tip-metric g-margin" data-name="taxes">
+<span class="g-tip-metric-name">Team strength:</span>
+<span class="g-tip-metric-value">4</span>
+</div>
+<div class="g-tip-metric g-margin" data-name="earnings">
+<span class="g-tip-metric-name">Funding:</span>
+<span class="g-tip-metric-value">$16.2B</span>
+<br>
+</div>
+
+<div class="g-tip-metric g-margin" data-name="description">
+<!--<span class="g-tip-metric-name"></span>-->
+<span class="g-tip-metric-value not-bold g-margin">Here is the text</span>
+<span class="g-margin"></span>
+</div>
+	</div>
+<i class="fa fa-triangle-bottom" style="text-align: center; display: inline-block; width:100%; color:#333;"></i>
+</div>
+</div>
+</div>
+
+<script src="http://localhost/wordpress/wp-content/themes/factordailyv2/fd-bubble-chart/d3.min.js">
+</script>
+<!--
+<script src="https://factordaily.com/wp-content/themes/factordailyv2/fd-bubble-chart/d3.min.js">
+</script>
+-->
+
+<script>(function() {
+
+// Margin width height etc
+var margin = {top: 20, right: 95, bottom: 10, left: 125},
+    width = 970 - margin.left - margin.right,
+    height,
+    tickExtension = 10; // extend grid lines beyond scale range
+
+//Percentage - not necessary for our purpose		
+var formatPercent = d3.format(".0%"),
+    formatTenthPercent = d3.format(".1%"),
+    formatNumber = d3.format(",.3s"),
+    formatDollars = function(d) { return (d < 0 ? "-" : "") + "$" + formatNumber(Math.abs(d)).replace(/G$/, "B"); };
+
+//Main title for the Chart
+var nameAll = "AD expenditure in India";
+
+//One of the scales
+var x = d3.scale.linear()
+    .domain([0, .6])
+    .rangeRound([0, width - 60])
+    .clamp(true)
+    .nice();
+
+//Another scale on y
+var y = d3.scale.ordinal();
+		
+//Scale on y0
+var y0 = d3.scale.ordinal()
+    .domain([nameAll])
+    .range([150]);
+
+//Defining r
+var r = d3.scale.sqrt()
+    .domain([0, 1e9])
+    .range([0, 1]);
+		
+// z for the old legend
+//var z = d3.scale.threshold()
+//    .domain([.1, .2, .3, .4, .5])
+//    .range(["#b35806", "#f1a340", "#fee0b6", "#d8daeb", "#998ec3", "#542788"].reverse());
+
+// Timeline on x axis
+	var scale = d3.scale
+    .linear()
+    .domain([2015, 2019])
+    .range([100, width])
+
+// The X axis
+	var xAxis = d3.svg.axis()
+    .scale(scale)
+	.tickFormat(d3.format("d"))
+    .orient("top")
+
+//
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left")
+    .tickSize(-width + 60 - tickExtension * 2, 0)
+    .tickPadding(4);
+
+//
+var quadtree = d3.geom.quadtree()
+    .x(function(d) { return d.x; })
+    .y(function(d) { return d.y; });
+
+//
+var svg = d3.select(".g-graphic").append("svg")
+   .attr("height", 220 + margin.top + margin.bottom)
+   .attr("width", width + margin.left + margin.right)
+		.append("g")
+		.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+			
+//X axis legend
+var gx = svg.append("g")
+    .attr("class", "g-x g-axis")
+    .call(xAxis);
+		
+//Title for x axis legend
+var titleX = gx.append("text")
+    .attr("class", "g-title")
+    .attr("y", -9)
+    .style("text-anchor", "end")
+		
+// Title for the vertical
+titleX.append("tspan")
+    .attr("x", -25)
+    .style("font-weight", "bold")
+    .text("Year ");
+		
+// Title for the vertical
+titleX.append("tspan")
+//    .attr("x", -20)
+//    .attr("dy", "1em")
+//    .text("2007-2017");
+//d3.csv("marketindia.tsv", function(error, companies) {
+		
+// Load the data
+//d3.tsv("https://factordaily.com/wp-content/themes/factordailyv2/fd-bubble-chart/companiesoriginal.tsv", type, function(error, companies) {
+d3.tsv("http://localhost/wordpress/wp-content/themes/factordailyv2/fd-bubble-chart/adexpenseindia.tsv", type, function(error, companies) {
+  var sectors = d3.nest()
+      .key(function(d) { return d.sector; })
+      .entries(companies);
+  // Compute the overall rate for all data.
+  var overallRate = rate(d3.sum(companies, taxes), d3.sum(companies, earnings));
+  // Compute the overall rate by sector.
+	
+//  sectors.forEach(function(d) {
+//    d.rate = rate(d3.sum(d.values, taxes), d3.sum(d.values, earnings));
+//  });
+	
+//Colours for circles
+var i = 1;
+sectors.forEach(function(d) {
+
+		  if(d.key === 'Television'){
+			 var legend = '#ff8000';
+		  }else if(d.key === 'Newspaper'){
+			 var legend = '#ffbf00';
+		  }else if(d.key === 'Magazine'){
+			 var legend = '#bfff00';
+		  }else if(d.key === 'Radio'){
+			 var legend = '#00ff40';
+		  }else if(d.key === 'Cinema'){
+			 var legend = '#00bfff';
+		  }else if(d.key === 'Outdoor'){
+			 var legend = '#0080ff';
+		  }else if(d.key === 'Digital'){
+			 var legend = '#4000ff';
+		  }else{
+			var legend = '#ff9900'; 
+		  }
+	var smallkey = d.key.replace(/\W+/g, '-').toLowerCase();
+  d3.select(".g-graphic")
+	  .append("a")
+	  .on("mouseover", mouseoverhighlight)
+	  .on("mouseout", mouseouthighlight)
+	  .attr("href",'#'+smallkey)
+	  .attr("data-cid",smallkey)
+	  .attr("x", i++ * 150 )
+	  .attr("y", 15)
+	  .attr("width", 'auto' )
+	  .style("color", "#333")
+//	  .style("list-style-color", legend)
+	  .html('<i style="background:'+legend+'"></i>'+ d.key);
+  
+
+  });	
+function mouseoverhighlight(){
+	var cid = this.getAttribute('data-cid');
+	d3.selectAll('.'+cid).style("opacity","0.8")
+}
+	
+function mouseouthighlight(){
+	var cid = this.getAttribute('data-cid');
+	d3.selectAll('.'+cid).style("opacity","0.5")
+}
+
+	//Click to show only selected sector -  under construction
+//function clickhighlight(){
+//	var cid = this.getAttribute('data-cid');
+//	
+//	d3.selectAll('.'+cid).style("opacity","0.8")
+//}
+  // Sort sectors by ascending overall rate.
+  sectors.sort(function(a, b) {
+    return a.rate - b.rate;
+  });
+  // Compute the rate for each company.
+  companies.forEach(function(d) {
+    d.rate = rate(d.employees, d.earnings);
+  });
+  height = 120 * sectors.length;
+  y
+      .domain(sectors.map(function(d) { return d.key; }))
+      .rangePoints([10, height], 1);
+  svg.append("g")
+      .attr("class", "g-y g-axis g-y-axis-sector")
+     // .attr("transform", "translate(-" + tickExtension + ",0)")
+     .call(yAxis.scale(y))
+      //.call(yAxisWrap)
+      .style("stroke-opacity", 0)
+      .style("fill-opacity", 0)
+    .selectAll(".tick text,.tick tspan")
+      .attr("x", 0)
+      .style("text-anchor", "end");	
+  svg.append("g")
+      .attr("class", "g-y g-axis g-y-axis-overall")
+      .attr("transform", "translate(-" + tickExtension + ",0)")
+      .call(yAxis.scale(y0))
+      //.call(yAxisWrap);
+	
+	
+  var companyClip = svg.append("defs").selectAll("clipPath")
+      .data(companies)
+    .enter().append("clipPath")
+      .attr("id", function(d, i) { return "g-clip-company-" + i; })
+    .append("circle")
+      .attr("cx", function(d) { return d.cx; })
+      .attr("cy", function(d) { return d.cy - y0(nameAll); })
+      .attr("r", function(d) { return r(d.capitalization) + 20; });
+  var gVoronoi = svg.append("g")
+      .attr("class", "g-voronoi")
+  gVoronoi.selectAll("path")
+      .data(companies)
+    .enter().append("path")
+      .attr("clip-path", function(d, i) { return "url(#g-clip-company-" + i + ")"; })
+      .on("mouseover", mouseover)
+      .on("mouseout", mouseout);
+//  gVoronoi.call(updateVoronoi,
+//      function(d) { return d.cx; },
+//      function(d) { return d.cy + y0(nameAll); },
+//      420);
+  var sector = svg.append("g")
+      .attr("class", "g-sector")
+      .selectAll("g")
+      .data(sectors)
+      .enter().append("g")
+      .attr("transform", function(d) { return "translate(0," + y(d.key) + ")"; });
+	
+  var sectorNote = d3.select(".g-sector-notes")
+      .style("opacity", 0)
+      .style("display", "none")
+    .selectAll("div")
+      .data(sectors)
+    .enter().append("div")
+      .attr("class", "g-sector-note")
+      .style("top", function(d) { return y(d.key) + "px"; })
+      .html(function(d) { return sectorNoteByName[d.key]; });
+
+  var sectorCompany = sector.append("g")
+      .attr("class", "g-sector-company")
+    .selectAll("circle")
+      .data(function(d) { return d.values; })
+    .enter().append("circle")
+      .attr("cx", function(d) { return d.cx; })
+      .attr("cy", function(d) { return d.cy - y(d.sector) + y0(nameAll); })
+      .attr("r", function(d) { return r(d.capitalization) * 100; })
+  	  .attr('class',function(d){ return d.sector.replace(/\W+/g, '-').toLowerCase()})
+  	  .style("opacity", 0.5)
+      .style("fill", function(d) { 
+		  
+		  
+		  if(d.sector === 'Television'){
+			 return '#ff8000';
+		  }else if(d.sector === 'Newspaper'){
+			 return '#ffbf00';
+		  }else if(d.sector === 'Magazine'){
+			 return '#bfff00';
+		  }else if(d.sector === 'Radio'){
+			 return '#00ff40';
+		  }else{
+		  return '#ff9900'; 
+		  }
+		  
+	  })
+      .on("mouseover", mouseover)
+      .on("mouseout", mouseout);
+	
+  var sectorOverall = sector.append("g")
+      .attr("class", "g-overall")
+      .attr("transform", function(d) { return "translate(" + x(d.rate) + "," + (y0(nameAll) - y(d.key)) + ")"; })
+      .style("stroke-opacity", 0)
+      .style("fill-opacity", 0);
+//  sectorOverall.append("line")
+//      .attr("y1", -100)
+//      .attr("y2", +127);
+//  var sectorOverallText = sectorOverall.append("text")
+//      .attr("y", -106);
+//  sectorOverallText.append("tspan")
+//      .attr("x", 0)
+//      .text(function(d) { return formatPercent(d.rate); });
+//  sectorOverallText.filter(function(d, i) { return !i; }).append("tspan")
+//      .attr("x", 0)
+//      .attr("dy", "-11")
+//      .style("font-size", "8px")
+//      .text("Team strength");
+  var overall = svg.append("g")
+      .attr("class", "g-overall g-overall-all")
+      .attr("transform", "translate(" + x(overallRate) + "," + y0(nameAll) + ")")
+  
+//  overall.append("line")
+//      .attr("y1", -100)
+//      .attr("y2", +127);
+  var overallText = overall.append("text")
+      .attr("y", -106)
+      .style("font-weight", "bold");
+//  overallText.append("tspan")
+//      .attr("x", 0)
+//      .style("font-size", "13px")
+//      .text(formatTenthPercent(overallRate));
+  overallText.append("tspan")
+      .attr("x", 0)
+      .attr("dy", "-14")
+      .style("font-size", "10px")
+     // .text("Team strength");
+  var currentView = "overall";
+  d3.selectAll(".g-content button[data-view]")
+      .datum(function(d) { return this.getAttribute("data-view"); })
+      .on("click", transitionView);
+  var searchInput = d3.select(".g-search input")
+      .on("keyup", keyuped);
+  var searchClear = d3.select(".g-search .g-search-clear")
+      .on("click", function() {
+        searchInput.property("value", "").node().blur();
+        search();
+      });
+  var tip = d3.select(".g-tip");
+  var tipMetric = tip.selectAll(".g-tip-metric")
+      .datum(function() { return this.getAttribute("data-name"); });
+  d3.selectAll(".g-annotations b,.g-sector-notes b")
+      .datum(function() { return new RegExp("\\b" + d3.requote(this.textContent), "i"); })
+      .on("mouseover", mouseoverAnnotation)
+      .on("mouseout", mouseout);
+  function keyuped() {
+    if (d3.event.keyCode === 27) {
+      this.value = "";
+      this.blur();
+    }
+    search(this.value.trim());
+  }
+  function search(value) {
+    if (value) {
+      var re = new RegExp("\\b" + d3.requote(value), "i");
+      svg.classed("g-searching", true);
+      sectorCompany.classed("g-match", function(d) { return re.test(d.name) || re.test(d.sector) || (d.symbol && re.test(d.symbol)) || (d.alias && re.test(d.alias)); });
+      var matches = d3.selectAll(".g-match");
+      if (matches[0].length === 1) mouseover(matches.datum());
+      else mouseout();
+      searchClear.style("display", null);
+    } else {
+      mouseout();
+      svg.classed("g-searching", false);
+      sectorCompany.classed("g-match", false);
+      searchClear.style("display", "none");
+    }
+  }
+  function transitionView(view) {
+    if (currentView === view) view = view === "overall" ? "sector" : "overall";
+    d3.selectAll(".g-buttons button[data-view]").classed("g-active", function(v) { return v === view; })
+    switch (currentView = view) {
+      case "overall": return void transitionOverall();
+      case "sector": return void transitionSector();
+    }
+  }
+  function transitionOverall() {
+    gVoronoi.style("display", "none");
+    var transition = d3.transition()
+        .duration(750);
+    transition.select("svg")
+        .delay(720)
+        .attr("height", 420 + margin.top + margin.bottom)
+        .each("end", function() {
+          gVoronoi.call(updateVoronoi,
+            function(d) { return d.cx; },
+            function(d) { return d.cy + y0(nameAll); },
+            420);
+        });
+    transition.select(".g-annotations-overall")
+        .each("start", function() { this.style.display = "block"; })
+        .style("opacity", 1);
+    transition.select(".g-sector-notes")
+        .style("opacity", 0)
+        .each("end", function() { this.style.display = "none"; });
+    transition.selectAll(".g-y-axis-sector")
+        .style("stroke-opacity", 0)
+        .style("fill-opacity", 0);
+    transition.selectAll(".g-y-axis-overall")
+        .style("stroke-opacity", 1)
+        .style("fill-opacity", 1);
+    var transitionOverall = transition.select(".g-overall-all")
+        .delay(x(overallRate))
+        .style("stroke-opacity", 1)
+        .style("fill-opacity", 1);
+//    transitionOverall.select("line")
+        //.attr("y2", +127);
+    transitionOverall.select("text")
+        .attr("y", -106);
+    var transitionSectorOverall = transition.selectAll(".g-sector .g-overall")
+        .delay(function(d) { return x(d.rate); })
+        .attr("transform", function(d) { return "translate(" + x(d.rate) + "," + (y0(nameAll) - y(d.key)) + ")"; })
+        .style("stroke-opacity", 0)
+        .style("fill-opacity", 0);
+ //   transitionSectorOverall.select("line")
+//        .attr("y1", -100)
+//        .attr("y2", +127);
+    transitionSectorOverall.select("text")
+        .attr("y", -106);
+    transition.selectAll(".g-sector-company circle")
+        .delay(function(d) { return d.cx; })
+        .attr("cx", function(d) { return d.cx; })
+        .attr("cy", function(d) { return d.cy - y(d.sector) + y0(nameAll); });
+  }
+  function transitionSector() {
+    gVoronoi.style("display", "none");
+    var transition = d3.transition()
+        .duration(750);
+    transition.select("svg")
+        .attr("height", height + margin.top + margin.bottom)
+      .transition()
+        .delay(720)
+        .each("end", function() {
+          gVoronoi.call(updateVoronoi,
+            function(d) { return d.x; },
+            function(d) { return y(d.sector) + d.y; },
+            height);
+        });
+    transition.select(".g-annotations-overall")
+        .style("opacity", 0)
+        .each("end", function() { this.style.display = "none"; });
+    transition.select(".g-sector-notes")
+        .delay(250)
+        .each("start", function() { this.style.display = "block"; })
+        .style("opacity", 1);
+    transition.selectAll(".g-y-axis-sector,.g-sector-note")
+        .delay(250)
+        .style("stroke-opacity", 1)
+        .style("fill-opacity", 1);
+    transition.selectAll(".g-y-axis-overall")
+        .style("stroke-opacity", 0)
+        .style("fill-opacity", 0);
+    var transitionOverall = transition.select(".g-overall-all")
+        .delay(x(overallRate))
+        .style("stroke-opacity", 0)
+        .style("fill-opacity", 0);
+   // transitionOverall.select("line")
+       // .attr("y2", height - y0(nameAll));
+    var transitionSectorOverall = transition.selectAll(".g-sector .g-overall")
+        .delay(function(d) { return x(d.rate); })
+        .attr("transform", function(d) { return "translate(" + x(d.rate) + ",0)"; })
+        .style("stroke-opacity", 1)
+        .style("fill-opacity", 1);
+   // transitionSectorOverall.select("line")
+        //.attr("y1", -25)
+       // .attr("y2", +25);
+    transitionSectorOverall.select("text")
+        .attr("y", -31);
+    transition.selectAll(".g-sector-company circle")
+        .delay(function(d) { return d.x; })
+        .attr("cx", function(d) { return d.x; })
+        .attr("cy", function(d) { return d.y; });
+  }
+  function updateVoronoi(gVoronoi, x, y, height) {
+    companyClip
+        .attr("cx", x)
+        .attr("cy", y);
+    gVoronoi
+        .style("display", null)
+      .selectAll("path")
+        .data(d3.geom.voronoi().x(x).y(y)(companies))
+        .attr("d", function(d) { return "M" + d.join("L") + "Z"; })
+        .datum(function(d) { return d.point; });
+  }
+  function mouseoverAnnotation(re) {
+    var matches = sectorCompany.filter(function(d) { return re.test(d.name) || re.test(d.alias); }).classed("g-active", true);
+    if (d3.sum(matches, function(d) { return d.length; }) === 1) mouseover(matches.datum());
+    else tip.style("display", "none");
+  }
+  function mouseover(d) {
+    sectorCompany.filter(function(c) { return c === d; }).classed("g-active", true);
+    var dx, dy;
+    if (currentView === "overall") dx = d.cx, dy = d.cy + y0(nameAll);
+    else dx = d.x, dy = d.y + y(d.sector);
+    dy -= 19, dx += 50; // margin fudge factors
+    tip.style("display", null)
+        .style("top", (dy - r(d.capitalization)) + "px")
+        .style("left", dx + "px");
+    tip.select(".g-tip-title")
+//        .text(d.alias || d.name);
+        .text(d.name); // We want just the name
+    tipMetric.select(".g-tip-metric-value").text(function(name) {
+	
+		if(d.earnings > 0){
+        var abc = formatDollars(d.earnings);
+			  }else{
+		var abc = "Unknown";
+		  	  }
+		
+      switch (name) {
+		case "sector": return (d.sector);
+        case "rate": return (d.vintage);
+        case "taxes": return (d.employees) / 1000000;
+        case "earnings": return abc;
+		case "description": return (d.description);
+		case "location": return (d.location);
+      }
+    });
+  }
+  function mouseout() {
+    tip.style("display", "none");
+    sectorCompany.filter(".g-active").classed("g-active", false);
+  }
+});
+		
+function renderChartKey(g) {
+  var formatPercent = d3.format(".0%"),
+      formatNumber = d3.format(".0f");
+  // A position encoding for the key only.
+
+  var xAxis = d3.svg.axis()
+      .scale(x)
+      .orient("bottom")
+      .tickSize(13)
+      .tickValues(z.domain())
+      .tickFormat(function(d) { return d === .5 ? formatPercent(d) : formatNumber(100 * d); });
+  g.append("text")
+      .attr("x", -25)
+      .style("text-anchor", "end")
+      .style("font", "bold 9px sans-serif")
+      .text("Legend");
+
+
+
+
+  var gColor = g.append("g")
+      .attr("class", "g-key-color")
+      .attr("transform", "translate(140,-7)");
+	
+	
+  gColor.call(xAxis);
+  var gColorText = g.append("text")
+      .attr("x", 140 - 6)
+      .style("text-anchor", "end");
+  gColorText.append("tspan")
+      .style("font-weight", "bold")
+      .text("Color");
+  gColorText.append("tspan")
+      .style("fill", "#777")
+      .text(" shows effective rate");
+  var gSize = g.append("g")
+      .attr("class", "g-key-size")
+      .attr("transform", "translate(580,-7)");
+  var gSizeInstance = gSize.selectAll("g")
+      .data([1e9, 10e9, 50e9, 100e9])
+    .enter().append("g")
+      .attr("class", "g-sector");
+  gSizeInstance.append("circle")
+      .attr("r", r);
+  gSizeInstance.append("text")
+      .attr("x", function(d) { return r(d) + 4; })
+      .attr("dy", ".35em")
+      .text(function(d) { return "$" + Math.round(d / 1e9) + "B"; });
+  var gSizeX = 0;
+  gSizeInstance.attr("transform", function() {
+    var t = "translate(" + gSizeX + ",3)";
+    gSizeX += this.getBBox().width + 15;
+    return t;
+  });
+  var gSizeText = g.append("text")
+      .attr("x", 580 - 10)
+      .style("text-anchor", "end");
+  gSizeText.append("tspan")
+      .style("font-weight", "bold")
+      .text("Size");
+  gSizeText.append("tspan")
+      .style("fill", "#777")
+      .text(" shows market capitalization");
+}
+function yAxisWrap(g) {
+  g.selectAll(".tick text")
+    .filter(function(d) { return /[ ]/.test(d) && this.getComputedTextLength() > margin.left - tickExtension - 10; })
+      .attr("dy", null)
+      .each(function(d) {
+        d3.select(this).text(null).selectAll("tspan")
+            .data(d.split(" "))
+          .enter().append("tspan")
+            .attr("x", this.getAttribute("x"))
+            .attr("dy", function(d, i) { return (i * 1.35 - .35) + "em"; })
+            .text(function(d) { return d; });
+      });
+}
+function taxes(d) {
+  return d.employees;
+}
+function earnings(d) {
+  return d.earnings;
+}
+function rate(taxes, earnings) {
+  return earnings <= 0 ? NaN : taxes / earnings;
+}
+		
+function description(d){
+	return d.description
+}
+function type(d) {
+  d.x = +d.x;
+  d.y = +d.y;
+  d.cx = +d.cx;
+  d.cy = +d.cy;
+  d.employees *= 1e6;
+  d.earnings *= 1e6;
+  d.capitalization *= 1e6;
+  return d;
+}
+var sectorNoteByName = {
+//  "Utilities": "Utilities benefited from the 2009 stimulus bill, which included tax breaks for companies that make capital-intensive investments, like power plants.",
+//  "Information technology": "Technology companies can often move operations overseas for accounting purposes. And younger firms tend to have recent losses, holding down the sector&rsquo;s overall rate.",
+//  "Industrials": "As with the corporate sector, large industrial companies &mdash; like <b>Boeing</b>, <b>Caterpillar</b>, <b>General Electric</b> and <b>Honeywell</b> &mdash; pay lower taxes on average than small companies.",
+//  "Telecom": "<b>Verizon</b> had a much lower effective tax rate than its rival <b>AT&T</b>, despite having similar profits over the six-year period.",
+//  "Health care": "Within health care, managed care companies pay relatively higher tax rates, and makers of equipment, supplies and technology pay relatively lower rates.",
+//  "Pharma": "Tax breaks for research and the ability to locate operations in low-tax countries have helped pharmaceutical and biotech companies to pay low taxes.",
+//  "Consumer products": "Movie studios and packaged-food company pay more than 30 percent, on average. Soft-drink companies pay only 19 percent, and restaurant companies, 25 percent.",
+//  "Materials": "The materials industry (chemicals, minerals, etc.) exemplifies a point often made by tax experts: within industries, tax rates vary greatly, in ways that often evade simple explanation.",
+//  "Financials": "As financial firms have recovered from the crisis, some have paid relatively high tax rates.",
+//  "Retailers": "Brick-and-mortar retailers, like <b>Bed Bath & Beyond</b> and <b>Home Depot</b>, tend to pay high tax rates. Online retailers, like <b>Amazon</b>, face low rates.",
+//  "Energy": "An AI lab with a focus on energy, agriculture & water management.",
+//  "Insurance": "Many insurers pay lower-than-average rates. But <b>A.I.G.</b> &mdash; which had an $83 billion loss while paying $8 billion in taxes &mdash; drives the sector&rsquo;s average up."
+};
+})()</script>
+<!--updated 2 -->
+<!--[endif]-->
+
